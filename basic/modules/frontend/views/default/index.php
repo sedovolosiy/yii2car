@@ -4,5 +4,5 @@
     <p><?php echo $article['articles_date']?></p>
     <p><img style='margin-right:5px' width='150px' align='left' src='<?php echo $article['articles_img']?>'>
         <?php echo $article['articles_short_description']?></p>
-    <p><a href="<?=Yii::$app->urlManager->createUrl(['car/get-article', 'id'=>$article['id']])?>">Читать далее...</a></p>
-<?php } ?>
+    <p><a href="<?=Yii::$app->urlManager->createUrl(['frontend/articles/get-article', 'id'=>$article['id']])?>">Подробнее...</a></p>
+    <?php } ?>

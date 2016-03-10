@@ -25,11 +25,11 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'app\modules\frontend\models\User',
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
-            'errorAction' => 'car/error',
+            'errorAction' => 'frontend/default/error',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
@@ -49,21 +49,31 @@ $config = [
         ],
         'db' => require(__DIR__ . '/db.php'),
 
-       /* 'urlManager' => [
+        'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
 
 
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'car'],
-//                ''=>'car/index',
-//
-//                'article/<id:\d+>' => 'article?<id:\d+>',
+                ''=>'frontend/default/index',
+                'article/<id:\d+>' => 'frontend/articles/get-article',
+                'category/<id:\d+>' => 'frontend/categories/get-category',
+                'menu/<id:\d+>' => 'frontend/menu/get-menu',
+
+//                'article/<id:\d+>' => 'car/get-article',
 //                'menu/<id:\d+>' => 'car/get-menu',
+//                'category/<id:\d+>' => 'car/get-category',
+//                'login'=> 'car/login',
 
             ],
         ],
-        */
+
+
+    ],
+    'modules' => [
+        'frontend' => [
+            'class' => 'app\modules\frontend\Module',
+        ],
     ],
     'params' => $params,
 ];
