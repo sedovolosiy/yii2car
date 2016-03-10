@@ -8,6 +8,7 @@ use app\assets\AppAsset;
 
 AppAsset::register($this);
 ?>
+<?php if(Yii::$app->user->isGuest) { ?>
 <?php $this->beginPage() ?>
     <!DOCTYPE html>
     <html lang="<?= Yii::$app->language ?>">
@@ -41,3 +42,9 @@ AppAsset::register($this);
     </body>
     </html>
 <?php $this->endPage() ?>
+<?php }
+else { ?>
+<div id="main">
+    <div><?= $content ?></div>
+</div>
+<?php } ?>

@@ -13,10 +13,10 @@ use yii\bootstrap\NavBar;
     <?php } ?>
     <div class='quick-links'>»
         <?php if(Yii::$app->user->isGuest) { ?>
-            <a href="<?=Yii::$app->urlManager->createUrl(["frontend/user/login"]) ?>">Login</a>
+            <a href="<?=Yii::$app->urlManager->createUrl(["backend/user/login"]) ?>">Login</a>
         <?php } else { ?>
             <li>
-                <?php echo Html::beginForm(['/frontend/user/logout'], 'post') ?>
+                <?php echo Html::beginForm(['/backend/user/logout'], 'post') ?>
                 <?php
                 echo Html::submitButton(
                     'Logout (' . Yii::$app->user->identity->username . ')',
