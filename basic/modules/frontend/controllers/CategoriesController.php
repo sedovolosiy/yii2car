@@ -5,10 +5,9 @@ namespace app\modules\frontend\controllers;
 use Yii;
 use yii\web\Controller;
 use app\modules\frontend\models\Articles;
-use app\modules\frontend\models\Categories;
-use app\modules\frontend\models\Menu;
+use app\modules\frontend\controllers\CustomController;
 
-class CategoriesController extends Controller
+class CategoriesController extends CustomController
 {
     public function actionGetCategory($id)
     {
@@ -17,17 +16,5 @@ class CategoriesController extends Controller
                 ->where(['articles_category_id' => $id])
                 ->all()
         ]);
-    }
-    public function getAllMenu()
-    {
-        return Menu::find()->all();
-    }
-    public function getAllCategories()
-    {
-        return Categories::find()->all();
-    }
-    public function getAllArticles()
-    {
-        return Articles::find()->all();
     }
 }

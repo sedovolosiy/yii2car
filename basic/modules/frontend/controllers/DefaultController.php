@@ -6,9 +6,9 @@ use app\modules\frontend\models\Articles;
 use app\modules\frontend\models\Categories;
 use app\modules\frontend\models\Menu;
 use Yii;
-use yii\web\Controller;
+use app\modules\frontend\controllers\CustomController;
 
-class DefaultController extends Controller
+class DefaultController extends CustomController
 {
     public function actions()
     {
@@ -26,17 +26,5 @@ class DefaultController extends Controller
             'articles' => Articles::getArticles(),
             'menus' => Menu::find()->all()
         ]);
-    }
-    public function getAllMenu()
-    {
-        return Menu::find()->all();
-    }
-    public function getAllCategories()
-    {
-        return Categories::find()->all();
-    }
-    public function getAllArticles()
-    {
-        return Articles::find()->all();
     }
 }
