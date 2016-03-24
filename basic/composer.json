@@ -1,5 +1,7 @@
 {
     "require": {
-        "dmstr/yii2-adminlte-asset": "2.*"
+        "dmstr/yii2-adminlte-asset": "2.*",
+        "rmrevin/yii2-fontawesome": "~2.12",
+        "iutbay/yii2-fontawesome": "*"
     }
 }

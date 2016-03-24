@@ -25,7 +25,7 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'app\modules\backend\models\User',
+            'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
@@ -59,7 +59,11 @@ $config = [
                 'article/<id:\d+>' => 'frontend/articles/get-article',
                 'category/<id:\d+>' => 'frontend/categories/get-category',
                 'menu/<id:\d+>' => 'frontend/menu/get-menu',
-                'admin' => 'backend/user/login',
+//                'admin' => 'backend/user/login',
+//                'admin/list_menu' => 'backend/menu/get-list',
+//                'admin/list_articles' => 'backend/articles/get-list',
+//                'admin/list_categories' => 'backend/categories/get-list',
+//                'admin/add_menu' => 'backend/menu/add-menu',
 
 //                'article/<id:\d+>' => 'car/get-article',
 //                'menu/<id:\d+>' => 'car/get-menu',
@@ -75,9 +79,12 @@ $config = [
         'frontend' => [
             'class' => 'app\modules\frontend\Module',
         ],
-        'backend' => [
-            'class' => 'app\modules\backend\Module',
-        ]
+//        'backend' => [
+//            'class' => 'app\modules\backend\Module',
+//        ],
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+        ],
     ],
     'params' => $params,
 ];
