@@ -76,6 +76,11 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
         $this->auth_key = Yii::$app->security->generateRandomString();
     }
 
+    public function validatePassword($password)
+    {
+        return Yii::$app->security->validatePassword($password, $this->password_hash);
+    }
+
     /* Аутентификация пользователей */
 
     public static function findIdentity($id)

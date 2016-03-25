@@ -76,8 +76,8 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basic/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68565816">
-              <caret line="73" column="35" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.8231827">
+              <caret line="78" column="36" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="36" />
               <folding>
                 <element signature="e#30#38#0#PHP" expanded="true" />
               </folding>
@@ -475,7 +475,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458914654933</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="generateAuthKey">
+      <created>1458914791498</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1458914791498</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -542,7 +548,8 @@
     <MESSAGE value="add modules admin, frontend" />
     <MESSAGE value="Валидация форм" />
     <MESSAGE value="generatePasswordHash" />
-    <option name="LAST_COMMIT_MESSAGE" value="generatePasswordHash" />
+    <MESSAGE value="generateAuthKey" />
+    <option name="LAST_COMMIT_MESSAGE" value="generateAuthKey" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -869,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68565816">
-          <caret line="73" column="35" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.8231827">
+          <caret line="78" column="36" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="36" />
           <folding>
             <element signature="e#30#38#0#PHP" expanded="true" />
           </folding>
