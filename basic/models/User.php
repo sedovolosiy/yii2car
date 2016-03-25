@@ -4,6 +4,7 @@ namespace app\models;
 
 use Yii;
 use yii\web\IdentityInterface;
+use yii\behaviors\TimestampBehavior;
 
 /**
  * This is the model class for table "user".
@@ -65,7 +66,25 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
         ];
     }
 
+    /* Поведения */
+    public function behaviors()
+    {
+        return
+        [
+            TimestampBehavior::className()
+        ];
+    }
+
+    /* Поиск пользователей */
+    public static function findByUsername($username)
+    {
+        return static::findOne([
+           'username' => $username
+        ]);
+    }
+
     /* Хелперы */
+
     public function setPassword($password)
     {
         $this->password_hash = Yii::$app->security->generatePasswordHash($password);
