@@ -12,7 +12,6 @@ use app\components\AlertWidget;
 use yii\bootstrap\Button;
 
 
-
 AppAsset::register($this);
 
 ?>
@@ -37,109 +36,171 @@ AppAsset::register($this);
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
+
+    $menuItems = [
+        [
+            'label' => 'Меню <span class="glyphicon glyphicon-inbox"></span>',
+            'items' => [
+//                '<li class="dropdown-header">Расширения</li>',
+//                '<li class="divider"></li>',
+                [
+                    'label' => 'Перейти к просмотру',
+                    'url' => ['/admin/menu/index']
+                ],
+                [
+                    'label' => 'Добавить меню',
+                    'url' => ['/admin/menu/create']
+                ],
+
+            ]
+        ],
+        [
+            'label' => 'Статьи <span class="glyphicon glyphicon-inbox"></span>',
+            'items' => [
+//                '<li class="dropdown-header">Расширения</li>',
+//                '<li class="divider"></li>',
+                [
+                    'label' => 'Перейти к просмотру',
+                    'url' => ['/admin/articles/index']
+                ],
+                [
+                    'label' => 'Добавить статью',
+                    'url' => ['/admin/articles/create']
+                ],
+
+            ]
+        ],
+        [
+            'label' => 'Категории <span class="glyphicon glyphicon-inbox"></span>',
+            'items' => [
+//                '<li class="dropdown-header">Расширения</li>',
+//                '<li class="divider"></li>',
+                [
+                    'label' => 'Перейти к просмотру',
+                    'url' => ['/admin/categories/index']
+                ],
+                [
+                    'label' => 'Добавить категорию',
+                    'url' => ['/admin/categories/create']
+                ],
+
+            ]
+        ],
+    ];
+    if (Yii::$app->user->isGuest):
+        $menuItems[] = [
+            'label' => 'Регистрация',
+            'url' => ['/admin/default/reg']
+        ];
+        $menuItems[] = [
+            'label' => 'Войти',
+            'url' => ['/admin/default/login']
+        ];
+    else:
+    $menuItems[] = [
+        'label' => 'Выйти (' . Yii::$app->user->identity['username'] . ')',
+        'url' => ['/admin/default/logout'],
+        'linkOptions' =>['data-method'=>'post']
+
+    ];
+    endif;
+
+
     echo Nav::widget([
+        'items' => $menuItems,
+        'activateParents' => true,
+        'encodeLabels' => false,
         'options' => [
             'class' => 'navbar-nav navbar-right'
-        ],
-        'items' => [
-            [
-                'label' => 'Регистрация',
-                'url' => ['default/reg']
-
-            ],
-            [
-                'label' => 'Войти',
-                'url' => ['default/login']
-            ],
         ]
     ]);
 
-    echo ButtonDropdown::widget([
-        'label' => 'Menu',
-        'options' => [
-            'class' => 'btn-lg btn-default',
-            'style' => 'margin:5px'
-        ],
-        'dropdown' => [
-            'items' => [
-                [
-                    'label' => Html::encode('List Menu'),
-
-                    'url' => Yii::$app->urlManager->createUrl(["/admin/menu/index"]),
-                ],
-                [
-                    'label' => '',
-                    'options' => [
-                        'role' => 'presentation',
-                        'class' => 'divider'
-                    ]
-                ],
-                [
-                    'label' => 'Add menu',
-
-                    'url' => Yii::$app->urlManager->createUrl(["/admin/menu/create"]),
-                ],
-
-
-            ]
-        ]
-    ]);
-    echo ButtonDropdown::widget([
-        'label' => 'Articles',
-        'options' => [
-            'class' => 'btn-lg btn-default',
-            'style' => 'margin:5px'
-        ],
-        'dropdown' => [
-            'items' => [
-                [
-                    'label' => 'List Articles',
-                    'url' => Yii::$app->urlManager->createUrl(["/admin/articles/index"]),
-                ],
-                [
-                    'label' => '',
-                    'options' => [
-                        'role' => 'presentation',
-                        'class' => 'divider'
-                    ]
-                ],
-                [
-                    'label' => 'Add articles',
-
-                    'url' => Yii::$app->urlManager->createUrl(["/admin/articles/create"]),
-                ],
-
-
-            ]
-        ]
-    ]);
-    echo ButtonDropdown::widget([
-        'label' => 'Categories',
-        'options' => [
-            'class' => 'btn-lg btn-default',
-            'style' => 'margin:5px'
-        ],
-        'dropdown' => [
-            'items' => [
-                [
-                    'label' => 'List Categories',
-                    'url' => Yii::$app->urlManager->createUrl(["/admin/categories/index"]),
-                ],
-                [
-                    'label' => '',
-                    'options' => [
-                        'role' => 'presentation',
-                        'class' => 'divider'
-                    ]
-                ],
-                [
-                    'label' => 'Add categories',
-                    'url' => Yii::$app->urlManager->createUrl(["/admin/categories/create"]),
-                ],
-
-            ]
-        ]
-    ]);
+    //    echo ButtonDropdown::widget([
+    //        'label' => 'Menu',
+    //        'options' => [
+    //            'class' => 'btn-lg btn-default',
+    //            'style' => 'margin:5px'
+    //        ],
+    //        'dropdown' => [
+    //            'items' => [
+    //                [
+    //                    'label' => Html::encode('List Menu'),
+    //
+    //                    'url' => Yii::$app->urlManager->createUrl(["/admin/menu/index"]),
+    //                ],
+    //                [
+    //                    'label' => '',
+    //                    'options' => [
+    //                        'role' => 'presentation',
+    //                        'class' => 'divider'
+    //                    ]
+    //                ],
+    //                [
+    //                    'label' => 'Add menu',
+    //
+    //                    'url' => Yii::$app->urlManager->createUrl(["/admin/menu/create"]),
+    //                ],
+    //
+    //
+    //            ]
+    //        ]
+    //    ]);
+    //    echo ButtonDropdown::widget([
+    //        'label' => 'Articles',
+    //        'options' => [
+    //            'class' => 'btn-lg btn-default',
+    //            'style' => 'margin:5px'
+    //        ],
+    //        'dropdown' => [
+    //            'items' => [
+    //                [
+    //                    'label' => 'List Articles',
+    //                    'url' => Yii::$app->urlManager->createUrl(["/admin/articles/index"]),
+    //                ],
+    //                [
+    //                    'label' => '',
+    //                    'options' => [
+    //                        'role' => 'presentation',
+    //                        'class' => 'divider'
+    //                    ]
+    //                ],
+    //                [
+    //                    'label' => 'Add articles',
+    //
+    //                    'url' => Yii::$app->urlManager->createUrl(["/admin/articles/create"]),
+    //                ],
+    //
+    //
+    //            ]
+    //        ]
+    //    ]);
+    //    echo ButtonDropdown::widget([
+    //        'label' => 'Categories',
+    //        'options' => [
+    //            'class' => 'btn-lg btn-default',
+    //            'style' => 'margin:5px'
+    //        ],
+    //        'dropdown' => [
+    //            'items' => [
+    //                [
+    //                    'label' => 'List Categories',
+    //                    'url' => Yii::$app->urlManager->createUrl(["/admin/categories/index"]),
+    //                ],
+    //                [
+    //                    'label' => '',
+    //                    'options' => [
+    //                        'role' => 'presentation',
+    //                        'class' => 'divider'
+    //                    ]
+    //                ],
+    //                [
+    //                    'label' => 'Add categories',
+    //                    'url' => Yii::$app->urlManager->createUrl(["/admin/categories/create"]),
+    //                ],
+    //
+    //            ]
+    //        ]
+    //    ]);
 
     NavBar::end();
     ?>
