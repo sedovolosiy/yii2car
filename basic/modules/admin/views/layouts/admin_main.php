@@ -23,6 +23,7 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <?php $this->head() ?>
 </head>
 <body>
@@ -39,7 +40,7 @@ AppAsset::register($this);
 
     $menuItems = [
         [
-            'label' => 'Меню <span class="glyphicon glyphicon-inbox"></span>',
+            'label' => 'Меню <i class="fa fa-bars"></i>',
             'items' => [
 //                '<li class="dropdown-header">Расширения</li>',
 //                '<li class="divider"></li>',
@@ -48,14 +49,14 @@ AppAsset::register($this);
                     'url' => ['/admin/menu/index']
                 ],
                 [
-                    'label' => 'Добавить меню',
+                    'label' => '<i class="fa fa-plus"></i> Добавить меню',
                     'url' => ['/admin/menu/create']
                 ],
 
             ]
         ],
         [
-            'label' => 'Статьи <span class="glyphicon glyphicon-inbox"></span>',
+            'label' => 'Статьи <i class="fa fa-book"></i>',
             'items' => [
 //                '<li class="dropdown-header">Расширения</li>',
 //                '<li class="divider"></li>',
@@ -64,14 +65,14 @@ AppAsset::register($this);
                     'url' => ['/admin/articles/index']
                 ],
                 [
-                    'label' => 'Добавить статью',
+                    'label' => '<i class="fa fa-plus"></i> Добавить статью',
                     'url' => ['/admin/articles/create']
                 ],
 
             ]
         ],
         [
-            'label' => 'Категории <span class="glyphicon glyphicon-inbox"></span>',
+            'label' => 'Категории <i class="fa fa-th"></i>',
             'items' => [
 //                '<li class="dropdown-header">Расширения</li>',
 //                '<li class="divider"></li>',
@@ -80,7 +81,7 @@ AppAsset::register($this);
                     'url' => ['/admin/categories/index']
                 ],
                 [
-                    'label' => 'Добавить категорию',
+                    'label' => '<i class="fa fa-plus"></i> Добавить категорию',
                     'url' => ['/admin/categories/create']
                 ],
 

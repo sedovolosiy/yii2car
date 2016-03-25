@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b025e39b-9fb4-4055-8484-19a6d9c6ab4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/modules/admin/controllers/DefaultController.php" afterPath="$PROJECT_DIR$/basic/modules/admin/controllers/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/models/LoginForm.php" afterPath="$PROJECT_DIR$/basic/models/LoginForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/models/RegForm.php" afterPath="$PROJECT_DIR$/basic/models/RegForm.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/modules/admin/views/layouts/admin_main.php" afterPath="$PROJECT_DIR$/basic/modules/admin/views/layouts/admin_main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -66,17 +63,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin_main.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="admin_main.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basic/modules/admin/views/layouts/admin_main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.185185">
-              <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.8705674">
+              <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
               <folding>
                 <element signature="e#66#87#0#PHP" expanded="true" />
-                <marker date="1458919550540" expanded="false" signature="3273:6295" placeholder="..." />
-                <marker date="1458919550540" expanded="true" signature="6350:6422" placeholder="..." />
-                <marker date="1458919550540" expanded="true" signature="6453:6539" placeholder="..." />
-                <marker date="1458919550540" expanded="true" signature="6481:6539" placeholder="..." />
+                <marker date="1458925339788" expanded="false" signature="3400:6422" placeholder="..." />
+                <marker date="1458925339788" expanded="true" signature="6477:6549" placeholder="..." />
+                <marker date="1458925339788" expanded="true" signature="6580:6666" placeholder="..." />
+                <marker date="1458925339788" expanded="true" signature="6608:6666" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -94,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginForm.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginForm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/models/LoginForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18664047">
+            <state vertical-scroll-proportion="-36.666668">
               <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
               <folding>
                 <element signature="e#6#84#0#PHP" expanded="true" />
@@ -168,9 +165,9 @@
         <option value="$PROJECT_DIR$/basic/components/AlertWidget.php" />
         <option value="$PROJECT_DIR$/basic/models/User.php" />
         <option value="$PROJECT_DIR$/basic/models/RegForm.php" />
-        <option value="$PROJECT_DIR$/basic/modules/admin/views/layouts/admin_main.php" />
         <option value="$PROJECT_DIR$/basic/modules/admin/controllers/DefaultController.php" />
         <option value="$PROJECT_DIR$/basic/models/LoginForm.php" />
+        <option value="$PROJECT_DIR$/basic/modules/admin/views/layouts/admin_main.php" />
       </list>
     </option>
   </component>
@@ -188,10 +185,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="663" />
-    <option name="y" value="29" />
-    <option name="width" value="607" />
-    <option name="height" value="742" />
+    <option name="x" value="55" />
+    <option name="y" value="-4" />
+    <option name="width" value="1311" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -497,7 +494,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458915361248</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Регистрация и аутентификация пользователей сделано">
+      <created>1458921865710</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1458921865710</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -510,7 +513,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="663" y="29" width="607" height="742" extended-state="0" />
+    <frame x="55" y="-4" width="1311" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -567,7 +570,8 @@
     <MESSAGE value="generateAuthKey" />
     <MESSAGE value="validatePassword" />
     <MESSAGE value="Поведение и поиск пользователя" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поведение и поиск пользователя" />
+    <MESSAGE value="Регистрация и аутентификация пользователей сделано" />
+    <option name="LAST_COMMIT_MESSAGE" value="Регистрация и аутентификация пользователей сделано" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -860,20 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/modules/admin/views/layouts/admin_main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.185185">
-          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
-          <folding>
-            <element signature="e#66#87#0#PHP" expanded="true" />
-            <marker date="1458919550540" expanded="false" signature="3273:6295" placeholder="..." />
-            <marker date="1458919550540" expanded="true" signature="6350:6422" placeholder="..." />
-            <marker date="1458919550540" expanded="true" signature="6453:6539" placeholder="..." />
-            <marker date="1458919550540" expanded="true" signature="6481:6539" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/2fb0b0fb/2902110c-16eb-4973-9be8-b51228a11cb4/yii2basic..user">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -899,11 +889,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/models/LoginForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18664047">
+        <state vertical-scroll-proportion="-36.666668">
           <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="true" />
             <element signature="e#108#127#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/modules/admin/views/layouts/admin_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8705674">
+          <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
+          <folding>
+            <element signature="e#66#87#0#PHP" expanded="true" />
+            <marker date="1458925339788" expanded="false" signature="3400:6422" placeholder="..." />
+            <marker date="1458925339788" expanded="true" signature="6477:6549" placeholder="..." />
+            <marker date="1458925339788" expanded="true" signature="6580:6666" placeholder="..." />
+            <marker date="1458925339788" expanded="true" signature="6608:6666" placeholder="..." />
           </folding>
         </state>
       </provider>
