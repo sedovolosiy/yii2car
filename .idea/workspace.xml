@@ -2,59 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b025e39b-9fb4-4055-8484-19a6d9c6ab4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/components/AlertWidget.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/controllers/ArticlesController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/models/ArticlesTable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/models/ArticlesTableSearch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/controllers/CategoriesController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/models/CategoriesTable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/models/CategoriesTableSearch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/controllers/DefaultController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/models/LoginForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/controllers/MenuController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/models/MenuTable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/models/MenuTableSearch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/Module.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/models/RegForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/models/User.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/articles/_form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/categories/_form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/menu/_form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/articles/_search.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/categories/_search.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/menu/_search.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/auth.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/articles/create.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/categories/create.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/menu/create.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/default/error.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/frontend/views/layouts/footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/frontend/views/layouts/header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/articles/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/categories/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/default/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/menu/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/frontend/views/layouts/left_bar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/default/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/migrations/m160309_132705_create_user.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/migrations/m160324_181503_drop_user_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/migrations/m160324_181925_create_user_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/frontend/views/layouts/main.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/frontend/views/layouts/menu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/default/reg.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/web/css/site.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/articles/update.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/categories/update.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/menu/update.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/articles/view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/categories/view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/modules/admin/views/menu/view.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/basic/modules/admin/models/LoginForm.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/modules/admin/views/layouts/admin_main.php" afterPath="$PROJECT_DIR$/basic/modules/admin/views/layouts/admin_main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/composer.json" afterPath="$PROJECT_DIR$/basic/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/composer.lock" afterPath="$PROJECT_DIR$/basic/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/config/web.php" afterPath="$PROJECT_DIR$/basic/config/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/models/User.php" afterPath="$PROJECT_DIR$/basic/models/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="yii.iws" />
@@ -118,19 +66,21 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/modules/admin/controllers/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.185185">
+            <state vertical-scroll-proportion="-1.5185186">
               <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginForm.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/basic/models/LoginForm.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basic/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36345777">
-              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-              <folding />
+            <state vertical-scroll-proportion="0.5795678">
+              <caret line="70" column="72" selection-start-line="70" selection-start-column="52" selection-end-line="70" selection-end-column="72" />
+              <folding>
+                <element signature="e#30#38#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,7 +140,6 @@
         <option value="$PROJECT_DIR$/basic/migrations/m160324_181503_drop_user_table.php" />
         <option value="$PROJECT_DIR$/basic/migrations/m160324_181925_create_user_table.php" />
         <option value="$PROJECT_DIR$/basic/modules/admin/views/default/reg.php" />
-        <option value="$PROJECT_DIR$/basic/models/User.php" />
         <option value="$PROJECT_DIR$/basic/modules/admin/views/default/login.php" />
         <option value="$PROJECT_DIR$/basic/modules/admin/controllers/DefaultController.php" />
         <option value="$PROJECT_DIR$/basic/runtime/logs/app.log" />
@@ -199,6 +148,7 @@
         <option value="$PROJECT_DIR$/basic/modules/admin/views/layouts/admin_main.php" />
         <option value="$PROJECT_DIR$/basic/models/RegForm.php" />
         <option value="$PROJECT_DIR$/basic/models/LoginForm.php" />
+        <option value="$PROJECT_DIR$/basic/models/User.php" />
       </list>
     </option>
   </component>
@@ -216,8 +166,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="759" />
-    <option name="y" value="30" />
+    <option name="x" value="764" />
+    <option name="y" value="35" />
     <option name="width" value="607" />
     <option name="height" value="742" />
   </component>
@@ -310,24 +260,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yii" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yii" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -531,7 +463,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458814183021</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Валидация форм">
+      <created>1458913010858</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1458913010858</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -544,7 +482,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="759" y="30" width="607" height="742" extended-state="0" />
+    <frame x="764" y="35" width="607" height="742" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -555,7 +493,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39399293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5806962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57932264" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -596,7 +534,8 @@
     <MESSAGE value="добавил условие скрывающие основной контент при успешной авторизации." />
     <MESSAGE value="добавил условие скрывающие основной контент при авторизации и редирект на страницу yii.loc/admin" />
     <MESSAGE value="add modules admin, frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="add modules admin, frontend" />
+    <MESSAGE value="Валидация форм" />
+    <option name="LAST_COMMIT_MESSAGE" value="Валидация форм" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -829,14 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic/modules/admin/views/default/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.106090374">
@@ -855,14 +786,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/config/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.851852">
-          <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,14 +809,6 @@
           <folding>
             <element signature="e#6#150#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/modules/admin/controllers/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.185185">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,9 +838,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/models/LoginForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36345777">
+        <state vertical-scroll-proportion="9.148149">
           <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/config/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.308448">
+          <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/modules/admin/controllers/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5185186">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5795678">
+          <caret line="70" column="72" selection-start-line="70" selection-start-column="52" selection-end-line="70" selection-end-column="72" />
+          <folding>
+            <element signature="e#30#38#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
