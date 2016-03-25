@@ -8,6 +8,8 @@ use app\assets\AppAsset;
 use yii\bootstrap\NavBar;
 use yii\bootstrap\Nav;
 use yii\bootstrap\ButtonDropdown;
+use app\components\AlertWidget;
+use yii\bootstrap\Button;
 
 
 
@@ -22,12 +24,11 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <?php $this->head() ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
-<div class="container">
+<div class="wrap">
     <?php
     NavBar::begin([
         'brandLabel' => 'Admin Panel',
@@ -35,6 +36,22 @@ AppAsset::register($this);
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
+    ]);
+    echo Nav::widget([
+        'options' => [
+            'class' => 'navbar-nav navbar-right'
+        ],
+        'items' => [
+            [
+                'label' => 'Регистрация',
+                'url' => ['default/reg']
+
+            ],
+            [
+                'label' => 'Войти',
+                'url' => ['default/login']
+            ],
+        ]
     ]);
 
     echo ButtonDropdown::widget([
@@ -120,36 +137,18 @@ AppAsset::register($this);
                     'url' => Yii::$app->urlManager->createUrl(["/admin/categories/create"]),
                 ],
 
-
             ]
         ]
     ]);
-    if (Yii::$app->user->isGuest) {
-//        $menuItems[] = ['label' => 'Signup', 'url' => ['backend/site/signup']];
-//        $menuItems[] = ['label' => 'Login', 'url' => ['backend/user/login']];
-    } else {
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/backend/user/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link']
-            )
-            . Html::endForm()
-            . '</li>';
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
+
     NavBar::end();
     ?>
-</div>
-<div class="wrap">
+
     <div class="container">
+        <?= AlertWidget::widget() ?>
         <?= $content ?>
     </div>
 </div>
-
 <footer class="footer">
     <div class="container">
         <p class="pull-left">&copy; Admin Panel <?= date('Y') ?></p>
