@@ -8,11 +8,13 @@ use app\modules\admin\models\ArticlesTableSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\modules\admin\controllers\BehaviorsController;
+
 
 /**
  * ArticlesController implements the CRUD actions for ArticlesTable model.
  */
-class ArticlesController extends Controller
+class ArticlesController extends BehaviorsController
 {
     public function behaviors()
     {

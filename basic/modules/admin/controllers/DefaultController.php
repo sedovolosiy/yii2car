@@ -3,13 +3,14 @@
 namespace app\modules\admin\controllers;
 
 use app\models\User;
+use app\modules\admin\controllers\BehaviorsController;
 use yii\web\Controller;
 use app\models\LoginForm;
 use Yii;
 use app\models\RegForm;
 
 
-class DefaultController extends Controller
+class DefaultController extends BehaviorsController
 {
     public function actionIndex()
     {

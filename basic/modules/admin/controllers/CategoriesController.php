@@ -8,11 +8,12 @@ use app\modules\admin\models\CategoriesTableSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\modules\admin\controllers\BehaviorsController;
 
 /**
  * CategoriesController implements the CRUD actions for CategoriesTable model.
  */
-class CategoriesController extends Controller
+class CategoriesController extends BehaviorsController
 {
     public function behaviors()
     {

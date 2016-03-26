@@ -8,11 +8,12 @@ use app\modules\admin\models\MenuTableSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\modules\admin\controllers\BehaviorsController;
 
 /**
  * MenuController implements the CRUD actions for MenuTable model.
  */
-class MenuController extends Controller
+class MenuController extends BehaviorsController
 {
     public function behaviors()
     {
