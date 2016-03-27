@@ -27,7 +27,7 @@ $config = [
         'user' => [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
-            'loginUrl' => ['admin/default/login']
+            'loginUrl' => ['login']
         ],
         'errorHandler' => [
             'errorAction' => 'frontend/default/error',
@@ -61,6 +61,7 @@ $config = [
                 'article/<id:\d+>' => 'frontend/articles/get-article',
                 'category/<id:\d+>' => 'frontend/categories/get-category',
                 'menu/<id:\d+>' => 'frontend/menu/get-menu',
+                'login' => 'admin/login/login',
 //                'admin' => 'backend/user/login',
 //                'admin/list_menu' => 'backend/menu/get-list',
 //                'admin/list_articles' => 'backend/articles/get-list',
