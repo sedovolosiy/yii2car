@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\Url;
+use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\modules\admin\models\ArticlesTableSearch */
@@ -18,23 +20,38 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Create Articles Table', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
+    <?php Pjax::begin(); ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
+//        'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
             'articles_title',
             'articles_date',
-            'articles_img',
+//            'articles_img:image',
+            [
+                'label' => 'Картинка',
+                'format' => 'raw',
+                'value' => function($data){
+                    return Html::img(Url::toRoute($data->articles_img),[
+                        'alt'=>'yii2 - картинка в gridview',
+                        'style' => 'width:150px;'
+                    ]);
+                },
+            ],
+//            'articles_img',
             'articles_short_description:ntext',
             // 'articles_description:ntext',
             // 'articles_category_id',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+
+            ],
         ],
     ]); ?>
+    <?php Pjax::end(); ?>
 
 </div>

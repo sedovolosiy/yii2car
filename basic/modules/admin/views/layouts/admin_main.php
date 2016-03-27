@@ -46,6 +46,7 @@ AppAsset::register($this);
                     'label' => 'Перейти к просмотру',
                     'url' => ['/admin/menu/index']
                 ],
+                '<li class="divider"></li>',
                 [
                     'label' => '<i class="fa fa-plus"></i> Добавить меню',
                     'url' => ['/admin/menu/create']
@@ -62,6 +63,7 @@ AppAsset::register($this);
                     'label' => 'Перейти к просмотру',
                     'url' => ['/admin/articles/index']
                 ],
+                '<li class="divider"></li>',
                 [
                     'label' => '<i class="fa fa-plus"></i> Добавить статью',
                     'url' => ['/admin/articles/create']
@@ -78,6 +80,7 @@ AppAsset::register($this);
                     'label' => 'Перейти к просмотру',
                     'url' => ['/admin/categories/index']
                 ],
+                '<li class="divider"></li>',
                 [
                     'label' => '<i class="fa fa-plus"></i> Добавить категорию',
                     'url' => ['/admin/categories/create']
