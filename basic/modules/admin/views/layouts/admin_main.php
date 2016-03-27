@@ -7,9 +7,7 @@ use yii\helpers\Html;
 use app\assets\AppAsset;
 use yii\bootstrap\NavBar;
 use yii\bootstrap\Nav;
-use yii\bootstrap\ButtonDropdown;
 use app\components\AlertWidget;
-use yii\bootstrap\Button;
 
 
 AppAsset::register($this);
@@ -115,93 +113,6 @@ AppAsset::register($this);
             'class' => 'navbar-nav navbar-right'
         ]
     ]);
-
-    //    echo ButtonDropdown::widget([
-    //        'label' => 'Menu',
-    //        'options' => [
-    //            'class' => 'btn-lg btn-default',
-    //            'style' => 'margin:5px'
-    //        ],
-    //        'dropdown' => [
-    //            'items' => [
-    //                [
-    //                    'label' => Html::encode('List Menu'),
-    //
-    //                    'url' => Yii::$app->urlManager->createUrl(["/admin/menu/index"]),
-    //                ],
-    //                [
-    //                    'label' => '',
-    //                    'options' => [
-    //                        'role' => 'presentation',
-    //                        'class' => 'divider'
-    //                    ]
-    //                ],
-    //                [
-    //                    'label' => 'Add menu',
-    //
-    //                    'url' => Yii::$app->urlManager->createUrl(["/admin/menu/create"]),
-    //                ],
-    //
-    //
-    //            ]
-    //        ]
-    //    ]);
-    //    echo ButtonDropdown::widget([
-    //        'label' => 'Articles',
-    //        'options' => [
-    //            'class' => 'btn-lg btn-default',
-    //            'style' => 'margin:5px'
-    //        ],
-    //        'dropdown' => [
-    //            'items' => [
-    //                [
-    //                    'label' => 'List Articles',
-    //                    'url' => Yii::$app->urlManager->createUrl(["/admin/articles/index"]),
-    //                ],
-    //                [
-    //                    'label' => '',
-    //                    'options' => [
-    //                        'role' => 'presentation',
-    //                        'class' => 'divider'
-    //                    ]
-    //                ],
-    //                [
-    //                    'label' => 'Add articles',
-    //
-    //                    'url' => Yii::$app->urlManager->createUrl(["/admin/articles/create"]),
-    //                ],
-    //
-    //
-    //            ]
-    //        ]
-    //    ]);
-    //    echo ButtonDropdown::widget([
-    //        'label' => 'Categories',
-    //        'options' => [
-    //            'class' => 'btn-lg btn-default',
-    //            'style' => 'margin:5px'
-    //        ],
-    //        'dropdown' => [
-    //            'items' => [
-    //                [
-    //                    'label' => 'List Categories',
-    //                    'url' => Yii::$app->urlManager->createUrl(["/admin/categories/index"]),
-    //                ],
-    //                [
-    //                    'label' => '',
-    //                    'options' => [
-    //                        'role' => 'presentation',
-    //                        'class' => 'divider'
-    //                    ]
-    //                ],
-    //                [
-    //                    'label' => 'Add categories',
-    //                    'url' => Yii::$app->urlManager->createUrl(["/admin/categories/create"]),
-    //                ],
-    //
-    //            ]
-    //        ]
-    //    ]);
 
     NavBar::end();
     ?>

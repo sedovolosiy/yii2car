@@ -30,7 +30,7 @@ class BehaviorsController extends Controller
                     [
                         'allow' => true,
                         'controllers' => ['admin/default'],
-                        'actions' => ['index', 'logout'],
+                        'actions' => ['index', 'logout', 'reg'],
                         'verbs' => ['GET', 'POST'],
                         'roles' => ['@']
                     ],
