@@ -16,17 +16,17 @@ use app\modules\admin\controllers\BehaviorsController;
  */
 class ArticlesController extends BehaviorsController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+//    public function behaviors()
+//    {
+//        return [
+//            'verbs' => [
+//                'class' => VerbFilter::className(),
+//                'actions' => [
+//                    'delete' => ['post'],
+//                ],
+//            ],
+//        ];
+//    }
 
     /**
      * Lists all ArticlesTable models.

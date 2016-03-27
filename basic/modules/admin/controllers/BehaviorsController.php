@@ -34,13 +34,27 @@ class BehaviorsController extends Controller
                         'verbs' => ['GET', 'POST'],
                         'roles' => ['@']
                     ],
-//                    [
-//                        'allow' => true,
-//                        'controllers' => ['admin/menu'],
-//                        'actions' => ['index', 'view', 'create', 'update'],
-//                        'verbs' => ['GET', 'POST'],
-//                        'roles' => ['@']
-//                    ],
+                    [
+                        'allow' => true,
+                        'controllers' => ['admin/menu'],
+                        'actions' => ['index', 'view', 'create', 'update', 'delete'],
+                        'verbs' => ['GET', 'POST'],
+                        'roles' => ['@']
+                    ],
+                    [
+                        'allow' => true,
+                        'controllers' => ['admin/categories'],
+                        'actions' => ['index', 'view', 'create', 'update', 'delete'],
+                        'verbs' => ['GET', 'POST'],
+                        'roles' => ['@']
+                    ],
+                    [
+                        'allow' => true,
+                        'controllers' => ['admin/articles'],
+                        'actions' => ['index', 'view', 'create', 'update', 'delete'],
+                        'verbs' => ['GET', 'POST'],
+                        'roles' => ['@']
+                    ],
 
                 ]
             ],
