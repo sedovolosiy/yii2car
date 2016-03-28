@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use app\modules\admin\controllers\BehaviorsController;
+use yii\web\UploadedFile;
 
 
 /**
@@ -65,6 +66,12 @@ class ArticlesController extends BehaviorsController
         $model = new ArticlesTable();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            $model->file = UploadedFile::getInstance($model, 'file');
+            $model->file->saveAs('file/'.$model->file->baseName .'.'.$model->file->extension);
+            $model->articles_img = '/' .'file/'.$model->file->baseName .'.'.$model->file->extension;
+            $model->save();
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -84,6 +91,11 @@ class ArticlesController extends BehaviorsController
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $model->file = UploadedFile::getInstance($model, 'file');
+            $model->file->saveAs('file/'.$model->file->baseName .'.'.$model->file->extension);
+            $model->articles_img = '/' .'file/'.$model->file->baseName .'.'.$model->file->extension;
+            $model->save();
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [

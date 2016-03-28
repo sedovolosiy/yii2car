@@ -18,10 +18,7 @@ use yii\web\UploadedFile;
  */
 class ArticlesTable extends \yii\db\ActiveRecord
 {
-    public $string;
-    public $image;
-    public $filename;
-
+    public $file;
     /**
      * @inheritdoc
      */
@@ -33,6 +30,15 @@ class ArticlesTable extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    public function behaviors()
+    {
+        return [
+            'image' => [
+                'class' => 'rico\yii2images\behaviors\ImageBehave',
+            ]
+        ];
+    }
+
     public function rules()
     {
         return [
@@ -41,7 +47,7 @@ class ArticlesTable extends \yii\db\ActiveRecord
             [['articles_short_description', 'articles_description'], 'string'],
             [['articles_category_id'], 'integer'],
             [['articles_title'], 'string', 'max' => 255],
-            [['articles_img'], 'file'],
+            [['file'], 'file'],
         ];
     }
 
@@ -61,22 +67,4 @@ class ArticlesTable extends \yii\db\ActiveRecord
         ];
     }
 
-    public function beforeSave($insert){
-        if ($this->isNewRecord) {
-            //generate & upload
-            $this->string = substr(uniqid('img'), 0, 12); //imgRandomString
-            $this->image = UploadedFile::getInstance($this, 'articles_img');
-            $this->filename = 'static/images/' . $this->string . '.' . $this->image->extension;
-            $this->image->saveAs($this->filename);
-            //save
-            $this->img = '/' . $this->filename;
-        }else{
-            $this->image = UploadedFile::getInstance($this, 'articles_img');
-            if($this->image){
-                $this->image->saveAs(substr($this->img, 1));
-            }
-        }
-
-        return parent::beforeSave($insert);
-    }
 }

@@ -16,7 +16,18 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'articles_date')->textInput() ?>
 
-    <?= $form->field($model, 'articles_img')->fileInput() ?>
+    <?= $form->field($model, 'file')->fileInput() ?>
+
+<!--    <div class="form-group">-->
+<!--        --><?//
+//            $images = $model->getImages();
+//        ?>
+<!--        --><?php //foreach ($images as $image): ?>
+<!--        <div class="'col-md-3">-->
+<!--            <img src="--><?//=$image->getUrl('300x')?><!--" alt="'/">-->
+<!--            --><?php //endforeach ?>
+<!--        </div>-->
+<!--    </div>-->
 
     <?= $form->field($model, 'articles_short_description')->textarea(['rows' => 6]) ?>
 
