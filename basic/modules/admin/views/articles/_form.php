@@ -18,16 +18,12 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'file')->fileInput() ?>
 
-<!--    <div class="form-group">-->
-<!--        --><?//
-//            $images = $model->getImages();
-//        ?>
-<!--        --><?php //foreach ($images as $image): ?>
-<!--        <div class="'col-md-3">-->
-<!--            <img src="--><?//=$image->getUrl('300x')?><!--" alt="'/">-->
-<!--            --><?php //endforeach ?>
-<!--        </div>-->
-<!--    </div>-->
+    <div class="form-group">
+
+        <div class="'col-md-3">
+            <img style='margin-right:5px' width='150px' src="<?=$model->articles_img ?>" alt="'/">
+        </div>
+    </div>
 
     <?= $form->field($model, 'articles_short_description')->textarea(['rows' => 6]) ?>
 
