@@ -10,13 +10,7 @@ $config = [
 
 
     'components' => [
-//        'view' => [
-//            'theme' => [
-//                'pathMap' => [
-//                    '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
-//                ],
-//            ],
-//        ],
+
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'F-MeyHLqlQ3aHnSREM6n2w1Ibp4L0-UX',
@@ -87,6 +81,15 @@ $config = [
 //        ],
         'admin' => [
             'class' => 'app\modules\admin\Module',
+        ],
+        'yii2images' => [
+            'class' => 'rico\yii2images\Module',
+            //be sure, that permissions ok
+            //if you cant avoid permission errors you have to create "images" folder in web root manually and set 777 permissions
+            'imagesStorePath' => 'static/images', //path to origin images
+            'imagesCachePath' => 'static/cache', //path to resized copies
+            'graphicsLibrary' => 'GD', //but really its better to use 'Imagick'
+            'placeHolderPath' => '@webroot/static/placeHolder.png', // if you want to get placeholder when image not exists, string will be processed by Yii::getAlias
         ],
     ],
     'params' => $params,

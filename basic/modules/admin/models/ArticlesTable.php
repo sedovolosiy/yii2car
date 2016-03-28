@@ -3,6 +3,7 @@
 namespace app\modules\admin\models;
 
 use Yii;
+use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "articles_table".
@@ -17,6 +18,10 @@ use Yii;
  */
 class ArticlesTable extends \yii\db\ActiveRecord
 {
+    public $string;
+    public $image;
+    public $filename;
+
     /**
      * @inheritdoc
      */
@@ -31,11 +36,12 @@ class ArticlesTable extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['articles_title', 'articles_img'], 'required'],
+            [['articles_title'], 'required'],
             [['articles_date'], 'safe'],
             [['articles_short_description', 'articles_description'], 'string'],
             [['articles_category_id'], 'integer'],
-            [['articles_title', 'articles_img'], 'string', 'max' => 255]
+            [['articles_title'], 'string', 'max' => 255],
+            [['articles_img'], 'file'],
         ];
     }
 
@@ -53,5 +59,24 @@ class ArticlesTable extends \yii\db\ActiveRecord
             'articles_description' => 'Articles Description',
             'articles_category_id' => 'Articles Category ID',
         ];
+    }
+
+    public function beforeSave($insert){
+        if ($this->isNewRecord) {
+            //generate & upload
+            $this->string = substr(uniqid('img'), 0, 12); //imgRandomString
+            $this->image = UploadedFile::getInstance($this, 'articles_img');
+            $this->filename = 'static/images/' . $this->string . '.' . $this->image->extension;
+            $this->image->saveAs($this->filename);
+            //save
+            $this->img = '/' . $this->filename;
+        }else{
+            $this->image = UploadedFile::getInstance($this, 'articles_img');
+            if($this->image){
+                $this->image->saveAs(substr($this->img, 1));
+            }
+        }
+
+        return parent::beforeSave($insert);
     }
 }

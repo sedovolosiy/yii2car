@@ -10,13 +10,13 @@ use yii\widgets\ActiveForm;
 
 <div class="articles-table-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype'=>'multipart/form-data']]); ?>
 
     <?= $form->field($model, 'articles_title')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'articles_date')->textInput() ?>
 
-    <?= $form->field($model, 'articles_img')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'articles_img')->fileInput() ?>
 
     <?= $form->field($model, 'articles_short_description')->textarea(['rows' => 6]) ?>
 

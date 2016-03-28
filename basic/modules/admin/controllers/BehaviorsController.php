@@ -20,13 +20,13 @@ class BehaviorsController extends Controller
             'access' => [
                 'class' => AccessControl::className(),
                 'rules' => [
-                    [
-                        'allow' => true,
-                        'controllers' => ['admin/default'],
-                        'actions' => ['reg', 'login'],
-                        'verbs' => ['GET', 'POST'],
-                        'roles' => ['?']
-                    ],
+//                    [
+//                        'allow' => true,
+//                        'controllers' => ['admin/default'],
+//                        'actions' => ['reg', 'login'],
+//                        'verbs' => ['GET', 'POST'],
+//                        'roles' => ['?']
+//                    ],
                     [
                         'allow' => true,
                         'controllers' => ['admin/default'],
