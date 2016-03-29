@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use mihaildev\ckeditor\CKEditor;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\ArticlesTable */
@@ -16,6 +17,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'articles_date')->textInput() ?>
 
+<!--    --><?//= $form->field($model, 'status')->checkbox(['checked' => true]) ?>
+
     <?= $form->field($model, 'file')->fileInput() ?>
 
     <div class="form-group">
@@ -25,9 +28,21 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
 
-    <?= $form->field($model, 'articles_short_description')->textarea(['rows' => 6]) ?>
+<!--    --><?//= $form->field($model, 'articles_short_description')->textarea(['rows' => 6]) ?>
+    <?=  $form->field($model, 'articles_short_description')->widget(CKEditor::className(),[
+    'editorOptions' => [
+    'preset' => 'basic', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
+    'inline' => false, //по умолчанию false
+    ],
+    ]);?>
 
-    <?= $form->field($model, 'articles_description')->textarea(['rows' => 6]) ?>
+<!--    --><?//= $form->field($model, 'articles_description')->textarea(['rows' => 6]) ?>
+    <?=  $form->field($model, 'articles_description')->widget(CKEditor::className(),[
+        'editorOptions' => [
+            'preset' => 'standard', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
+            'inline' => false, //по умолчанию false
+        ],
+    ]);?>
 
     <?= $form->field($model, 'articles_category_id')->textInput() ?>
 

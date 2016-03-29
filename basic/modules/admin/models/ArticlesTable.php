@@ -19,6 +19,10 @@ use yii\web\UploadedFile;
 class ArticlesTable extends \yii\db\ActiveRecord
 {
     public $file;
+
+    const STATUS_INACTIVE = 0;
+    const STATUS_ACTIVE = 1;
+
     /**
      * @inheritdoc
      */
@@ -45,7 +49,7 @@ class ArticlesTable extends \yii\db\ActiveRecord
             [['articles_title'], 'required'],
             [['articles_date'], 'safe'],
             [['articles_short_description', 'articles_description'], 'string'],
-            [['articles_category_id'], 'integer'],
+            [['articles_category_id', 'status'], 'integer'],
             [['articles_title'], 'string', 'max' => 255],
             [['file'], 'file'],
         ];
@@ -58,11 +62,11 @@ class ArticlesTable extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'articles_title' => 'Articles Title',
-            'articles_date' => 'Articles Date',
-            'articles_img' => 'Articles Img',
-            'articles_short_description' => 'Articles Short Description',
-            'articles_description' => 'Articles Description',
+            'articles_title' => 'Заголовок статьи',
+            'articles_date' => 'Дата публикации',
+            'articles_img' => 'Картинка',
+            'articles_short_description' => 'Краткое описание',
+            'articles_description' => 'Полное описание',
             'articles_category_id' => 'Articles Category ID',
         ];
     }

@@ -117,6 +117,12 @@ class ArticlesController extends BehaviorsController
         return $this->redirect(['index']);
     }
 
+//    public function actionUpdateStates($id)
+//    {
+//        $model = $this->findModel($id);
+//        if ($model->load(Yii::$app->request->post()) && $model->save());
+//    }
+
     /**
      * Finds the ArticlesTable model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
