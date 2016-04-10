@@ -92,10 +92,11 @@ class ArticlesController extends BehaviorsController
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $model->file = UploadedFile::getInstance($model, 'file');
-            $model->file->saveAs('file/'.$model->file->baseName .'.'.$model->file->extension);
-            $model->articles_img = '/' .'file/'.$model->file->baseName .'.'.$model->file->extension;
-            $model->save();
-
+            if ($model->file) {
+                $model->file->saveAs('file/' . $model->file->baseName . '.' . $model->file->extension);
+                $model->articles_img = '/' . 'file/' . $model->file->baseName . '.' . $model->file->extension;
+                $model->save();
+            }
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
